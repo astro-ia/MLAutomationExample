@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestAll" parallel="tests" thread-count="10">
+
+<parameter name="selenium.browser" value="CHROME" />
+
+
+<test name="MercadoLibre">
+
+<parameter name="search" value="ipad2" />
+    <classes>
+     <class name="ml.tests.MercadoLibreTest" />
+  </classes>  
+  
+</test>
+ 
+ 
+ <test name="MercadoLibreSearch">
+
+<parameter name="search" value="iphone" />
+    <classes>
+     <class name="ml.tests.MercadoLibreSearchTest" />
+  </classes>
+  
+  
+</test>
+
+ 
+ 
+</suite>
