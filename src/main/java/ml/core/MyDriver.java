@@ -15,8 +15,8 @@ public class MyDriver {
 
     private WebDriver driver;
     
-    private static String sauceUser = "nicomoraes";
-    private static String sauceKey = "1aa978cf-7d92-4b7e-a1a6-ab5611a7d7fc";
+    private static String sauceUser = "";
+    private static String sauceKey = "";
 
     public WebDriver getDriver() {
 
@@ -39,7 +39,7 @@ public class MyDriver {
     	    
     	    
     	case CHROME:
-    	    System.setProperty("webdriver.chrome.driver","/Users/nimoraes/Desktop/chromedriver");
+    	    System.setProperty("webdriver.chrome.driver","/chromedriver");
     	    driver = new ChromeDriver();
     	    break;
     	    
